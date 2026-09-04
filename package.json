@@ -18,6 +18,7 @@
   ],
   "files": [
     "agents/",
+    "docs/pi-setup.md",
     "prompts/",
     "references/",
     "skills/",

@@ -13,19 +13,19 @@ Add a Pi package layer without modifying upstream files. Independent implementat
 ## Task List
 
 ### Phase 1: Package
-- [ ] Task 1: Add the Pi manifest and dependency-free resource validator.
+- [x] Task 1: Add the Pi manifest and dependency-free resource validator.
 
 ### Phase 2: Commands
-- [ ] Task 2: Add Pi-native lifecycle prompt templates using `.pi/plans/`.
+- [x] Task 2: Add Pi-native lifecycle prompt templates using `.pi/plans/`.
 
 ### Phase 3: Orchestration and Documentation
-- [ ] Task 3: Add the task-fit specialist persona, orchestration skill, and Pi setup guide.
+- [x] Task 3: Add the task-fit specialist persona, orchestration skill, and Pi setup guide.
 
 ### Checkpoint: Complete
-- [ ] New package validation passes.
-- [ ] Existing repository validation passes.
-- [ ] `pi install .` succeeds with an isolated home.
-- [ ] `git diff` contains additive files only.
+- [x] New package validation passes.
+- [x] Existing repository validation passes.
+- [x] `pi install .` succeeds with an isolated home.
+- [x] `git diff` contains additive files only.
 
 ## Risks and Mitigations
 

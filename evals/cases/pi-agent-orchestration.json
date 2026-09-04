@@ -1,0 +1,43 @@
+{
+  "skill_name": "pi-agent-orchestration",
+  "trigger": {
+    "positive": [
+      {
+        "prompt": "Use pi-subagents to split these independent features into parallel worktree lanes",
+        "top_k": 1
+      },
+      {
+        "prompt": "Delegate this compound implementation safely with one writer per checkout",
+        "top_k": 3
+      },
+      {
+        "prompt": "Orchestrate scouts, implementers, and fresh reviewers while keeping the parent in control",
+        "top_k": 3
+      }
+    ],
+    "negative": [
+      {
+        "prompt": "Break this approved specification into small dependency-ordered tasks",
+        "owner": "planning-and-task-breakdown"
+      },
+      {
+        "prompt": "Review the staged diff for correctness and maintainability",
+        "owner": "code-review-and-quality"
+      }
+    ]
+  },
+  "evals": [
+    {
+      "id": 1,
+      "kind": "dialogue",
+      "prompt": "Propose an orchestration plan for three independent feature changes followed by integration review. Do not launch agents or edit files; describe the exact safe Pi-subagents shape.",
+      "expected_output": "A parent-owned plan that discovers executable agents, assigns task-fit personas with complete packets, runs independent writers in separate worktrees through one async workflow, and uses fresh read-only review before integration",
+      "expectations": [
+        "The plan calls for capability discovery before selecting any agent and rejects unavailable external runners",
+        "The plan uses exactly one top-level asynchronous workflowScript and parallelizes only independent lanes",
+        "Each mutation lane has a task-fit persona, a cold-start-complete contract, a separate managed worktree, and one writer",
+        "Fresh read-only reviewers inspect the resulting candidates and the parent retains finding disposition and integration authority"
+      ]
+    }
+  ]
+}
