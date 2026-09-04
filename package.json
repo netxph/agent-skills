@@ -1,0 +1,43 @@
+{
+  "name": "agent-skills",
+  "version": "0.6.8",
+  "description": "Production-grade engineering skills for AI coding agents — covering the full software development lifecycle from spec to ship.",
+  "author": {
+    "name": "Addy Osmani"
+  },
+  "homepage": "https://github.com/addyosmani/agent-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addyosmani/agent-skills.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "coding-agent"
+  ],
+  "files": [
+    "agents/",
+    "prompts/",
+    "references/",
+    "skills/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node scripts/validate-pi-package.js && node scripts/validate-skills.js && node scripts/validate-commands.js && node scripts/validate-artifact-paths.js && node scripts/validate-reference-links.js"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "prompts": [
+      "./prompts"
+    ],
+    "subagents": {
+      "agents": [
+        "./agents"
+      ]
+    }
+  }
+}
